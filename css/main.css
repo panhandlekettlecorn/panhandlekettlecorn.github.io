@@ -71,22 +71,44 @@ body {
 
 .header-container {
     border-bottom: 20px solid #EB2227;
+    background: url(../img/header-bg.png);
+    background-position: center;
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 175px
+}
+
+.header-logo {
+  height: 232px;
+  width: 300px;
+  position: absolute;
+  z-index: 200;
+  background: url(../img/logo.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  top:0px;
+  left: 50%;
+  margin-left:-100px;
 }
 
 .footer-container,
 .main aside {
     border-top: 20px solid #EB2227;
+    margin-top:75px;
 }
 
-.header-container,
 .footer-container,
 .main aside {
     background: #F94D51;
+
 }
 
 .title {
     color: white;
 }
+
 
 /* ==============
     MOBILE: Menu
@@ -153,59 +175,24 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: none;
+  outline: 3px solid #fff;
+  border:none;
+  color: #fff;
+}
 
-   /* keyframes for animation;  simple 0 to 360 */
-   @keyframes spin {
-   	from { transform: rotate(0deg); }
-   	to { transform: rotate(360deg); }
-   }
-
-   /* basic structure for the rays setup */
-   #raysDemoHolder	{
-   	position: relative;
-   	width: 490px;
-   	height: 490px;
-   	margin: 100px 0 0 200px;
-   }
-   #raysLogo {
-   	width: 300px;
-   	height: 233px;
-   	text-indent: -3000px;
-   	background: url(logo.png) 0 0 no-repeat;
-   	display: block;
-   	position: absolute;
-   	top: 0;
-   	left: 0;
-   	z-index: 2;
-   }
-   #rays	{ /* with animation properties */
-   	background: url(rays.png) 0 0 no-repeat;
-   	position: absolute;
-   	top: -100px;
-   	left: -100px;
-   	width: 490px;
-   	height: 490px;
-
-   	/* microsoft ie */
-   	animation-name: spin;
-   	animation-duration: 40000ms; /* 40 seconds */
-   	animation-iteration-count: infinite;
-   	animation-timing-function: linear;
-   }
-
-   #rays:hover {
-   	/* animation-duration: 10000ms; 10 seconds - speed it up on hover! */
-   	/* resets the position though!  sucks */
-   }
-
-
-
-
-
-
-
-
-
+label {
+  color: #fff;
+  font-weight: bold;
+  font-size: .8em;
+}
 
 
 
