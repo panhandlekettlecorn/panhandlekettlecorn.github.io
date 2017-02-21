@@ -1,4 +1,10 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+/*
+COLORS HEX
+red - #EB2227
+yellow - #FBED1F
+
+*/
 
 html {
     color: #222;
@@ -76,7 +82,7 @@ body {
     background-size: 100% 125%;
     background-repeat: no-repeat;
     text-align: center;
-    min-height: 175px
+    min-height: 175px;
 }
 
 .header-logo {
@@ -93,11 +99,19 @@ body {
   margin-left:-150px;
 }
 
-.footer-container,
-.main aside {
-    border-top: 10px solid #EB2227;
-    margin-top:40px;
-    background: #f5f5f5;
+.pre-footer {
+  padding:30px;
+  color:#FBED1F;
+  background: #EB2227;
+  text-align:center;
+  font-weight:bold;
+  font-size:1.5em;
+  }
+
+.footer-container {
+  border-bottom: 5px solid #EB2227;
+  background-color:#ecf0f1;
+  color:#666;
 }
 
 .title {
@@ -145,21 +159,25 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 80px 0;
 }
 
 .main article h1 {
     font-size: 2em;
 }
 
-.main aside {
-    color: #EB2227;
+.main aside,
+footer  aside {
     padding: 0px 5% 10px;
+    display: inline-block;
+    position: relative;
+    background: #ecf0f1;
+    border: 1px solid #ddd;
 }
 
 .footer-container footer {
-    color: #EB2227;
-    padding: 20px 0;
+    padding: 20px 0 30px 0;
+    overflow: hidden;
 }
 
 /* ===============
@@ -186,7 +204,7 @@ textarea {
 }
 
 label {
-  color: #666;
+  color: #444;
   font-weight: bold;
   font-size: .8em;
 }
@@ -199,9 +217,17 @@ button[type="submit"] {
   background: #EB2227;
   outline: 3px solid #EB2227;
   border:none;
-  color: #e5e5e5;
-}
+  color: #fff;
 
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+button[type="submit"]:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin: 8px 0 12px 0;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -260,12 +286,14 @@ button[type="submit"] {
     WIDE: Main
    ============ */
 
-    .main article {
+    .main article,
+    footer article {
         float: left;
         width: 57%;
     }
 
-    .main aside {
+    .main aside,
+    footer aside {
         float: right;
         width: 28%;
     }
