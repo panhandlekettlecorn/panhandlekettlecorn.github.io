@@ -76,13 +76,14 @@ body {
    =================== */
 
 .header-container {
+    border-top: 5px solid #EB2227;
     border-bottom: 20px solid #EB2227;
     background: url(../img/header-bg1.jpg);
     background-position: center;
     background-size: 100% 125%;
     background-repeat: no-repeat;
     text-align: center;
-    min-height: 175px;
+    min-height: 180px;
 }
 
 .header-logo {
@@ -94,7 +95,7 @@ body {
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  top:0px;
+  top:15px;
   left: 50%;
   margin-left:-150px;
 }
