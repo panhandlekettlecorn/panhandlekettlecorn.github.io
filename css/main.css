@@ -7,7 +7,7 @@ yellow - #FBED1F
 */
 
 html {
-    color: #222;
+    color: #333;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -57,6 +57,16 @@ textarea {
     padding: 0.2em 0;
 }
 
+a {
+  color: #980004;
+  border-bottom: 1px solid #980004;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid #333;
+  color: #333;
+}
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
@@ -76,8 +86,6 @@ body {
    =================== */
 
 .header-container {
-    border-top: 5px solid #EB2227;
-    border-bottom: 20px solid #EB2227;
     background: url(../img/header-bg1.jpg);
     background-position: center;
     background-size: 100% 125%;
@@ -100,19 +108,46 @@ body {
   margin-left:-150px;
 }
 
-.pre-footer {
-  padding:30px;
-  color:#FBED1F;
-  background: #EB2227;
+.post-header {
   text-align:center;
-  font-weight:bold;
-  font-size:1.5em;
+  border-top: 15px solid #EB2227;
+  padding:60px 5px 20px 5px;
+  /* color:#EB2227; */
+  /* background: #f5f5f5; */
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(25, 25, 25, 0.5);
+  -moz-box-shadow:    0px 2px 9px 0px rgba(25, 25, 25, 0.5);
+  box-shadow:         0px 2px 9px 0px rgba(25, 25, 25, 0.5);
+  background: #EB2227;
+  background: -webkit-linear-gradient(#EB2227, #980004); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#EB2227, #980004); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#EB2227, #980004); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#EB2227, #980004); /* Standard syntax */
   }
 
+.post-header h1 {
+  margin: 0 0 10px 0;
+  color:#FBED1F;
+  font-size: 1.2em;
+}
+
+.post-header a {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.post-header a:hover {
+  color: #FBED1F;
+  border-bottom: 2px solid #FBED1F;
+
+}
+
 .footer-container {
+  border-top: 15px solid #EB2227;
   border-bottom: 5px solid #EB2227;
   background-color:#ecf0f1;
-  color:#666;
+  color:#EB2227;
 }
 
 .title {
@@ -160,7 +195,7 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 80px 0;
+    padding: 20px 0;
 }
 
 .main article h1 {
@@ -172,8 +207,11 @@ footer  aside {
     padding: 0px 5% 10px;
     display: inline-block;
     position: relative;
-    background: #ecf0f1;
-    border: 1px solid #ddd;
+}
+
+.main aside {
+  background: #ecf0f1;
+  border: 1px solid #ddd;
 }
 
 .footer-container footer {
@@ -215,18 +253,21 @@ button[type="submit"] {
   padding: 5px;
   border-radius: 10px;
   margin: 10px 0;
-  background: #EB2227;
-  outline: 3px solid #EB2227;
   border:none;
   color: #fff;
-
   position: relative;
   display: inline-block;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  background: #EB2227;
+  background: -webkit-linear-gradient(#EB2227, #980004); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#EB2227, #980004); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#EB2227, #980004); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#EB2227, #980004); /* Standard syntax */
 }
 button[type="submit"]:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 3px 19px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   margin: 8px 0 12px 0;
 }
 /* ==========================================================================
@@ -280,7 +321,7 @@ button[type="submit"]:hover {
 
     nav {
         float: right;
-        width: 38%;
+        width: 100%;
     }
 
 /* ============
