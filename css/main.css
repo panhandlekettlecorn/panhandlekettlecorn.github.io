@@ -111,7 +111,7 @@ body {
 .post-header {
   text-align:center;
   border-top: 15px solid #EB2227;
-  padding:60px 5px 20px 5px;
+  padding:60px 5px 15px 5px;
   /* color:#EB2227; */
   /* background: #f5f5f5; */
   -webkit-box-shadow: 0px 2px 9px 0px rgba(25, 25, 25, 0.5);
@@ -194,7 +194,7 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 .main article h1 {
@@ -249,9 +249,9 @@ label {
 
 button[type="submit"] {
   width: 100%;
-  padding: 5px;
-  border-radius: 10px;
-  margin: 10px 0;
+  padding: 8px 5px;
+  border-radius: 5px;
+  margin: 5px 0;
   border:none;
   color: #fff;
   position: relative;
@@ -264,10 +264,19 @@ button[type="submit"] {
   background: -o-linear-gradient(#EB2227, #980004); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#EB2227, #980004); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#EB2227, #980004); /* Standard syntax */
+
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
 }
 button[type="submit"]:hover {
-  box-shadow: 0 3px 19px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  margin: 8px 0 12px 0;
+  background: #555;
+  background: -webkit-linear-gradient(#777, #333); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#777, #333); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#777, #333); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#777, #333); /* Standard syntax */
+  box-shadow: 0 8px 12px rgba(0,0,0,0.25), 0 5px 8px rgba(0,0,0,0.22);
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
 }
 /* ==========================================================================
    Media Queries
