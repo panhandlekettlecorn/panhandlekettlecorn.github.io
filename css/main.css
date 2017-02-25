@@ -144,8 +144,7 @@ body {
 }
 
 .footer-container {
-  border-top: 15px solid #EB2227;
-  border-bottom: 5px solid #EB2227;
+  border-top: 5px solid #EB2227;
   background-color:#ecf0f1;
   color:#EB2227;
 }
