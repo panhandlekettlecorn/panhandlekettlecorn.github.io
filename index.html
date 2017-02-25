@@ -74,8 +74,9 @@
                 <form method="POST" action="http://formspree.io/info@panhandlekettlecorn.com">
                   <label for="name">Name</label><input type="text" name="name">
                   <label for="phone">Phone</label><input type="phone" name="phone">
-                  <label for="email">Email</label><input type="email" name="email">
-                  <label for="email">Message</label><textarea name="message"></textarea>
+                  <label for="email">Email</label><input type="email" name="_replyto">
+                  <label for="message">Message</label><textarea name="message"></textarea>
+                  <input type="hidden" name="_subject" value="New message from website" />
                   <button type="submit">Send Message</button>
                 </form>
               </aside>
