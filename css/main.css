@@ -57,23 +57,25 @@ textarea {
     padding: 0.2em 0;
 }
 
-a {
-  color: #980004;
-  border-bottom: 1px solid #980004;
-  text-decoration: none;
-}
-
-a:hover {
-  border-bottom: 2px solid #333;
-  color: #333;
-}
-
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font-family: 'Signika', sans-serif;
+    background: #fff;
+    background: -webkit-linear-gradient(#fff, #FBED1F); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #FBED1F); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #FBED1F); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #FBED1F); /* Standard syntax */
+}
+
+p {
+  font-size: 1.1em;
+}
+
+h3 {
+
 }
 
 .wrapper {
@@ -84,7 +86,6 @@ body {
 /* ===================
     ALL: Red Theme
    =================== */
-
 .header-container {
     background: url(../img/header-bg1.jpg);
     background-position: center;
@@ -124,29 +125,29 @@ body {
   background: linear-gradient(#EB2227, #980004); /* Standard syntax */
   }
 
-.post-header h1 {
+.post-header h2 {
   margin: 0 0 10px 0;
   color:#FBED1F;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
-.post-header a {
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  margin-right: 15px;
-}
-
-.post-header a:hover {
-  color: #FBED1F;
-  border-bottom: 2px solid #FBED1F;
-
+.pre-footer {
+  height: 130px;
+  background: url('../img/carnival.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .footer-container {
-  border-top: 5px solid #EB2227;
-  background-color:#ecf0f1;
-  color:#EB2227;
+  border-top: 10px solid #EB2227;
+  color:#FBED1F;
+  background: #EB2227;
+  background: -webkit-linear-gradient(#EB2227, #980004); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#EB2227, #980004); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#EB2227, #980004); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#EB2227, #980004); /* Standard syntax */
 }
 
 .title {
@@ -157,6 +158,11 @@ p img {
   float: left;
   margin: 0 30px 20px 0;
 }
+
+.fa {
+margin-right: 10px;
+}
+
 /* ==============
     MOBILE: Menu
    ============== */
@@ -174,7 +180,7 @@ nav a {
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 
     color: white;
     background: #e44d26;
@@ -209,8 +215,22 @@ footer  aside {
 }
 
 .main aside {
-  background: #ecf0f1;
   border: 1px solid #ddd;
+  background: #ecf0f1;
+  background: -webkit-linear-gradient(#fff, #ecf0f1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fff, #ecf0f1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fff, #ecf0f1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fff, #ecf0f1); /* Standard syntax */
+}
+
+.main aside ul{
+  padding-left: 0;
+}
+
+.main aside ul li{
+  list-style: none;
+  display: block;
+  padding: 5px;
 }
 
 .footer-container footer {
@@ -243,7 +263,7 @@ textarea {
 
 label {
   color: #444;
-  font-weight: bold;
+  font-weight: 600;
   font-size: .8em;
 }
 
@@ -277,6 +297,25 @@ button[type="submit"]:hover {
   box-shadow: 0 8px 12px rgba(0,0,0,0.25), 0 5px 8px rgba(0,0,0,0.22);
   -webkit-transition: all .5s; /* Safari */
   transition: all .5s;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul a:hover {
+  color: #FBED1F;
+}
+
+footer ul li {
+  color: #fff;
+  display: inline;
+  margin-left: 15px;
 }
 /* ==========================================================================
    Media Queries

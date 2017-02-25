@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <link href="https://fonts.googleapis.com/css?family=Signika:400,600" rel="stylesheet">
+
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -27,7 +29,7 @@
             </header>
         </div>
         <div class="post-header">
-          <h1>Kettle corn and fun go together and makes any event into a carnival-like experience</h1>
+          <h2>Kettle corn and fun go together and makes any event into a carnival-like experience</h2>
         </div>
         <div class="main-container">
             <div class="main wrapper clearfix">
@@ -43,35 +45,43 @@
                       <img src="./img/popcorn3.jpg" alt="popcorn" width="100%">
                     </section>
                 </article>
-                <aside>
+                <aside id="contact-form">
                   <h3>We are currently booking our events for 2017, contact us today!</h3>
-                  <p>
-                    Panhandle Kettle Corn<br>
-                    Isaac and June Ballard<br>
-                    308-430-2850<br>
-                    info@panhandlekettlecorn.com<br>
-
+                  <ul>
+                    <li>
+                      <i class="fa fa-address-card" aria-hidden="true"></i>Panhandle Kettle Corn<br>
+                      <i class="fa fa-address-card" style="visibility:hidden;" aria-hidden="true"></i>Isaac and June Ballard
+                    </li>
+                    <li><i class="fa fa-phone-square" aria-hidden="true"></i>308-430-2850</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>info@panhandlekettlecorn.com</li>
+                  </ul>
                     <form method="POST" action="http://formspree.io/info@panhandlekettlecorn.com">
                       <input type="text" name="Your name" placeholder="Name" required/>
                       <input type="phone" name="phone" placeholder="Phone" />
                       <input type="text" name="_replyto" placeholder="Email" />
                       <textarea name="message" placeholder="Your message"></textarea>
                       <input type="hidden" name="_subject" value="New message from website" required/>
-                      <button type="submit">Send Message</button>
+                      <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send Message</button>
                     </form>
-                  </p>
                 </aside>
             </div> <!-- #main -->
 
         </div> <!-- #main-container -->
-
+        <div class="pre-footer"></div>
         <div class="footer-container" id="footer">
             <footer class="wrapper">
-              <h3>Upcoming Events</h3>
+              <h2><i class="fa fa-calendar" aria-hidden="true"></i>Upcoming Events</h2>
               <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&showTitle=0&showCalendars=0&src=qvouedcmcad5s518a07412qh0o%40group.calendar.google.com&ctz=America/Denver" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+              <ul>
+                <li><a href="#contact-form">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><i class="fa fa-phone-square" aria-hidden="true" style="margin-right:5px;"></i>308-430-2850</li>
+                <li>&copy; 2017 Panhandle Kettle Corn</li>
+              </ul>
           </footer>
         </div>
 
+        <script src="https://use.fontawesome.com/cb4fa2d500.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
