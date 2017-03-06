@@ -63,15 +63,21 @@ textarea {
 
 body {
   font-family: 'Rubik', sans-serif;
-    background: #fff;
-    background: -webkit-linear-gradient(#fff, #FBED1F); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#fff, #FBED1F); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#fff, #FBED1F); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#fff, #FBED1F); /* Standard syntax */
+    background: #FBED1F;
+    background: -webkit-linear-gradient(#FFFBC3, #FBED1F); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFFBC3, #FBED1F); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFBC3, #FBED1F); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFFBC3, #FBED1F); /* Standard syntax */
+
+    background: -webkit-linear-gradient(#FFF674, #ffffff ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFF674, #ffffff ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFF674, #ffffff ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF674, #ffffff ); /* Standard syntax */
 }
 
 p {
   font-size: 1.1em;
+  color: #555;
 }
 
 h3 {
@@ -84,52 +90,38 @@ h3 {
 }
 
 /* ===================
-    ALL: Red Theme
+    ALL: Header & Footer
    =================== */
 .header-container {
+    text-align: center;
+    min-height: 100px;
+    margin:50px 0 0 0;
     background: url(../img/header-bg1.jpg);
     background-position: center;
     background-size: 100% 125%;
     background-repeat: no-repeat;
-    text-align: center;
-    min-height: 180px;
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(25, 25, 25, 0.5);
+    -moz-box-shadow:    0px 2px 9px 0px rgba(25, 25, 25, 0.5);
+    box-shadow:         0px 2px 9px 0px rgba(25, 25, 25, 0.5);
+    background: #EB2227;
+    background: -webkit-linear-gradient(#EB2227, #980004); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EB2227, #980004); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EB2227, #980004); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#EB2227, #980004); /* Standard syntax */
 }
 
 .header-logo {
-  height: 232px;
-  width: 300px;
+  height: 200px;
+  width: 260px;
   position: absolute;
   z-index: 200;
   background: url(../img/logo.png);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  top:15px;
+  top:0px;
   left: 50%;
-  margin-left:-150px;
-}
-
-.post-header {
-  text-align:center;
-  border-top: 15px solid #EB2227;
-  padding:60px 5px 15px 5px;
-  /* color:#EB2227; */
-  /* background: #f5f5f5; */
-  -webkit-box-shadow: 0px 2px 9px 0px rgba(25, 25, 25, 0.5);
-  -moz-box-shadow:    0px 2px 9px 0px rgba(25, 25, 25, 0.5);
-  box-shadow:         0px 2px 9px 0px rgba(25, 25, 25, 0.5);
-  background: #EB2227;
-  background: -webkit-linear-gradient(#EB2227, #980004); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#EB2227, #980004); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#EB2227, #980004); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#EB2227, #980004); /* Standard syntax */
-  }
-
-.post-header h2 {
-  margin: 0 0 10px 0;
-  color:#FBED1F;
-  font-size: 1.5em;
-  font-weight: 600;
+  margin-left:-130px;
 }
 
 .pre-footer {
@@ -138,6 +130,8 @@ h3 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
+  margin-top: -130px; 
 }
 
 .footer-container {
@@ -150,10 +144,6 @@ h3 {
   background: linear-gradient(#EB2227, #980004); /* Standard syntax */
 }
 
-.title {
-    color: white;
-}
-
 p img {
   float: left;
   margin: 0 30px 20px 0;
@@ -164,73 +154,112 @@ margin-right: 10px;
 }
 
 /* ==============
+    Slider Styles
+   ============== */
+.main-slider {
+  margin-top: 15px;
+  position: relative;
+}
+
+.main-slider .slide {
+  background: #f0f0f0;
+  margin: 5px 10px;
+  padding:4px;
+  border: 2px solid #f0f0f0;
+  outline: 1px solid #d5d5d5;
+}
+
+.main-slider .slide p {
+  text-align: center;
+  padding: 10px;
+  color: #444;
+  margin: 0;
+}
+
+.main-slider .slide-image {
+  max-width:100%;
+  max-height:100%;
+}
+
+.main-slider .slide .slide-right {
+  display: inline;
+  position: absolute;
+  word-wrap: break-word;
+  right:0;
+  width: 50px;
+}
+/* ==============
     MOBILE: Menu
    ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: 600;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
+  nav {
+    display: none;
+  }
 
 /* ==============
     MOBILE: Main
    ============== */
 
 .main {
-    padding: 50px 0;
+    padding:50px 0 130px 0;
+    background: #FFFEF3;
+    border-left:5px solid #DFD549 ;
+    border-right:5px solid #DFD549 ;
+    box-shadow: 0px 2px 9px 0px rgba(25, 25, 25, 0.5);
+    
+}
+.main h2 {
+  font-size: 1.2em;
+  padding: 0 20px;
+  color: #EB2227;
+  text-align: center;
+}
+.main article {
+  padding: 20px;
 }
 
 .main article h1 {
+    color: #555;
     font-size: 2em;
 }
+.main article h3 {
+  color: #555;
+}
+footer ul {
+  text-align: center;
+}
 
-.main aside,
-footer  aside {
-    padding: 0px 5% 10px;
-    display: inline-block;
+footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul a:hover {
+  color: #FBED1F;
+}
+
+footer ul li {
+  color: #fff;
+  display: inline;
+  margin-left: 15px;
+}
+
+footer article, aside {
+    padding: 0px 2%;
+    display: block;
     position: relative;
 }
 
-.main aside {
-  border: 1px solid #ddd;
-  background: #ecf0f1;
-  background: -webkit-linear-gradient(#fff, #ecf0f1); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#fff, #ecf0f1); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#fff, #ecf0f1); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#fff, #ecf0f1); /* Standard syntax */
+footer aside ul{
+  padding: 0;
 }
 
-.main aside ul{
-  padding-left: 0;
-}
-
-.main aside ul li{
+footer aside ul li{
+  text-align: left;
   list-style: none;
   display: block;
   padding: 5px;
+  font-size: .8em;
+  margin: 0;
 }
 
 .footer-container footer {
@@ -247,19 +276,32 @@ footer  aside {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Form Styles
    ========================================================================== */
 input,
 textarea {
-  width: 95%;
+  box-sizing: border-box;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   margin: 10px 0;
   background: none;
-  outline: 2px solid #666;
+  outline: 2px solid #ffffff;
   border:none;
-  color: #666;
+  color: #ffffff;
 }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #b5b5b5;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #b5b5b5;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #b5b5b5;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #b5b5b5;
+  }
 
 label {
   color: #444;
@@ -298,25 +340,6 @@ button[type="submit"]:hover {
   -webkit-transition: all .5s; /* Safari */
   transition: all .5s;
 }
-
-footer ul {
-  text-align: center;
-}
-
-footer ul a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer ul a:hover {
-  color: #FBED1F;
-}
-
-footer ul li {
-  color: #fff;
-  display: inline;
-  margin-left: 15px;
-}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -326,22 +349,39 @@ footer ul li {
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
+  nav {
+    display: inline;
+  }
+  nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #fbed1f;
+  }
+  nav li:first-child a {
+      margin-left: 0;
+  }
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
+  nav li:last-child a {
+      margin-right: 0;
+  }
 
-    nav li:first-child a {
-        margin-left: 0;
-    }
+  nav ul {
+    list-style: none;
+    text-align: right;
+  }
 
-    nav li:last-child a {
-        margin-right: 0;
-    }
+  nav a {
+
+  }
+
+  nav a:hover,
+  nav a:visited {
+
+  }
+
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -362,26 +402,15 @@ footer ul li {
     WIDE: Menu
    ============ */
 
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 100%;
-    }
-
 /* ============
     WIDE: Main
    ============ */
 
-    .main article,
     footer article {
         float: left;
         width: 57%;
     }
 
-    .main aside,
     footer aside {
         float: right;
         width: 28%;
