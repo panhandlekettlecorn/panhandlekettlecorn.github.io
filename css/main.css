@@ -417,6 +417,10 @@ button[type="submit"]:hover {
   nav ul .fb-btn {
     float: right;
   }  
+  nav ul .fb-btn i {
+    color: #fff;
+    font-size: 1.5em;
+  }
   nav a {
     color: #fff;
     font-weight: bold;
