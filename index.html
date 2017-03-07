@@ -26,12 +26,16 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <div class="pre-header"></div>
         <div class="header-container">
             <header class="wrapper clearfix">
               <div class="header-logo"></div>
                 <nav>
                     <ul>
-                        <a href="#contact-form"><li>Contact Us</li></a>
+                        <a href="#product-list"><li>Products</li></a>
+                        <a href="#facebook-events"><li>Events</li></a>
+                        <a href="#contact-form"><li>Contact</li></a>
+                        <li class="fb-btn"><div class="fb-follow" data-href="https://www.facebook.com/panhandlekettlecorn" data-layout="button" data-size="large" data-show-faces="true"></div></li>
                     </ul>
                 </nav>
             </header>
@@ -39,41 +43,53 @@
 
         <div class="main-container">
             <div class="main wrapper clearfix">
-                <h2>Kettle corn and fun go together and makes any event into a carnival-like experience</h2>
+                <article class="first-article">
                     <div class="main-slider">
                         <div class="slide">
-                            <img src="./img/slider8.jpg" class="slide-image"></img>
-                            <p>Panhandle Kettle Corn is a new business serving the panhandle of Nebraska</p>
+                            <img src="./img/slider5.jpg"></img>
+                                <div class="slide-descr">
+                                    <p>Panhandle Kettle Corn is a new business serving the panhandle of Nebraska</p>
+                                </div>
                         </div>
                         <div class="slide">
-                            <img src="./img/slider5.jpg" class="slide-image"></img>
-                            <p>We can help promote your organization with Kettle Corn</p>
+                            <img src="./img/slider6.jpg"></img>
+                                <div class="slide-descr">
+                                    <p>Look for the bright red Panhandle Kettle Corn tent at community events, fairs and festivals</p>
+                                </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/slider1.jpg"></img>
+                                <div class="slide-descr">
+                                    <p>We can help promote your organization with kettle corn</p>
+                                </div>
                             </div>
                         <div class="slide">
-                            <img src="./img/slider1.jpg" class="slide-image"></img>
-                            <p>
-                                We will set up and cook at fundraising events, sharing proceeds to a designated cause
-                            </p>
+                            <img src="./img/slider3.jpg"></img>
+                                <div class="slide-descr">
+                                    <p>
+                                        We will set up and provide fresh kettle corn at fundraising and promotional events, sharing proceeds to a designated cause
+                                    </p>
+                                </div>
                         </div>
                         <div class="slide">
-                            <img src="./img/slider3.jpg" class="slide-image"></img>
-                            <p>School Events : Offering Sweet & Salty Kettle Corn in school colors<br>(Will contribute percentage of sales to designated school program)</p>
-                        </div>
-                        <div class="slide">
-                            <img src="./img/slider6.jpg" class="slide-image"></img>
-                            <p>Look for the bright red Panhandle Kettle Corn tent at community events, fairs and festivals</p>
-                        </div>
-                        <div class="slide">
-                            <img src="./img/slider4.jpg" class="slide-image"></img>
-                            <p>Isaac and June are excited to serve our community and the panhandle of Nebraska.</p>
+                            <img src="./img/slider4.jpg"></img>
+                                <div class="slide-descr">
+                                    <p>Isaac and June are excited to serve our community and the panhandle of Nebraska.</p>
+                                </div>
                         </div>
                     </div>
+                </article>
                 <article>
                     <section>
                         <h2>About Us</h2>
                         <p>
-                            Panhandle Kettle Corn is a new business serving the panhandle of Nebraska. We offer several delicious kettle corn products at events around the panhandle. We also partner with businesses, schools, and other organization or fundraisers and promotional events.
+                            We offer several delicious kettle corn products at events around the panhandle. We also partner with businesses, schools, and other organization or fundraisers and promotional events.
                         </p>
+                    </section>
+                    <section class="callout">
+                        Kettle corn and fun go together and makes any event into a carnival-like experience               
+                    </section>
+                    <section id="product-list">
                         <h2>Community Events</h2>
                         <p>
                             Look for the bright red Panhandle Kettle Corn tent at community events, fairs and festivals around the panhandle. We are cooking up fresh batches of our Old Fashioned Sweet & Salty Kettle Corn at every event. You'll smell it before you see us!
@@ -120,9 +136,11 @@
         <div class="footer-container" id="footer">
         <div class="pre-footer"></div>
             <footer class="wrapper">
-                <article>
+                <article id="facebook-events">
                     <h2><i class="fa fa-calendar" aria-hidden="true"></i>Upcoming Events</h2>
-                    <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&showTitle=0&showCalendars=0&src=qvouedcmcad5s518a07412qh0o%40group.calendar.google.com&ctz=America/Denver" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+                    <div class="fb-page" data-href="https://www.facebook.com/panhandlekettlecorn" data-tabs="events" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/panhandlekettlecorn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/panhandlekettlecorn">Panhandle Kettle Corn</a></blockquote></div>
+                    <!-- <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&showTitle=0&showCalendars=0&src=qvouedcmcad5s518a07412qh0o%40group.calendar.google.com&ctz=America/Denver" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+                    -->
                 </article>
 
                 <aside id="contact-form">
@@ -154,6 +172,14 @@
               </ul>
           </footer>
         </div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
         <script src="https://use.fontawesome.com/cb4fa2d500.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

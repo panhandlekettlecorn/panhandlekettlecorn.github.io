@@ -1,31 +1,11 @@
 
 $('.main-slider').slick({
-  centerMode: true,
-  centerPadding: '60px',
+  fade: true,
   slidesToShow: 1,
   autoplay: true,
   arrows: false,
   dots: true,
   infinite: true,
+  speed: 500,
   initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
 });

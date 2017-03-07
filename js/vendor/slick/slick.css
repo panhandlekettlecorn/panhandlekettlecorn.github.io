@@ -17,14 +17,6 @@
     -webkit-tap-highlight-color: transparent;
 
 }
-/*
-.slick-slider:after{
-    content: "";
-    position: absolute; top: 0; bottom: 0; left: 0px; right: 0px;
-    box-shadow:inset 40px 0px 30px -10px #f0f0f0,inset -40px 0px 30px -10px #f0f0f0;
-}
-*/
-
 .slick-list
 {
     position: relative;
