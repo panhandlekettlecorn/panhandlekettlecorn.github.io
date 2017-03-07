@@ -432,7 +432,7 @@ button[type="submit"]:hover {
     list-style: none;
   }
 
-nav ul .fb-follow .tooltiptext {
+nav ul .fb-btn .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -444,11 +444,11 @@ nav ul .fb-follow .tooltiptext {
     z-index: 1;
 }
 
-nav ul .fb-follow:hover .tooltiptext {
+nav ul .fb-follow:hover + .tooltiptext {
     visibility: visible;
 }
 
-nav ul .fb-follow .tooltiptext::after {
+nav ul .fb-follow + .tooltiptext::after {
     content: " ";
     position: absolute;
     bottom: 100%;
