@@ -6,6 +6,9 @@ $('.main-slider').slick({
   arrows: false,
   dots: true,
   infinite: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  pauseOnDotsHover: true,
   speed: 500,
   initialSlide: 0,
 });
