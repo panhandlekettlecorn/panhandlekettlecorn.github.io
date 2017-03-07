@@ -410,7 +410,6 @@ button[type="submit"]:hover {
     display: inline;
   }
   nav ul li {
-    transition: all .5s;
     float: left;
     margin: 0 8px;
   }
@@ -427,8 +426,10 @@ button[type="submit"]:hover {
     text-decoration: none;
   }
   nav a:hover {
-    color: #EB2227;
     color: #FBED1F;
+  }
+  nav a:hover > li {
+     border-bottom: 2px solid #FBED1F;
   }
 
   nav ul {
