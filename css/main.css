@@ -181,14 +181,6 @@ margin-right: 10px;
   max-height:100%;
   max-width:100%;
 }
-
-.main-slider .slide .slide-right {
-  display: inline;
-  position: absolute;
-  word-wrap: break-word;
-  right:0;
-  width: 50px;
-}
 /* ==============
     MOBILE: Menu
    ============== */
@@ -438,15 +430,6 @@ button[type="submit"]:hover {
     margin-top: 40px;
     margin-right: 10px;
     list-style: none;
-  }
-
-  nav a {
-
-  }
-
-  nav a:hover,
-  nav a:visited {
-
   }
 
 nav ul .fb-btn .tooltiptext {
