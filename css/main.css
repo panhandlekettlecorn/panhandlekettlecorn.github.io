@@ -407,6 +407,7 @@ button[type="submit"]:hover {
   }
   nav ul .fb-btn {
     float: right;
+    position: relative;
   }  
   nav ul .fb-btn i {
     color: #fff;
@@ -434,29 +435,19 @@ button[type="submit"]:hover {
 
 nav ul .fb-btn .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
+    width: 160px;
+    background-color: rgba(25,25,25,.75);
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px;
     border-radius: 6px;
     position: absolute;
     z-index: 1;
+    right:10px;
 }
 
-nav ul .fb-follow:hover + .tooltiptext {
+nav ul .fb-btn:hover .tooltiptext {
     visibility: visible;
-}
-
-nav ul .fb-follow + .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
 }
 
 /* ============
