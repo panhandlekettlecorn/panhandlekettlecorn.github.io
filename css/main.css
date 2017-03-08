@@ -159,19 +159,20 @@ margin-right: 10px;
   padding: 0;
 }
 
+
 .main-slider .slide .slide-descr p{
   text-align: center;
   padding: 20px;
   color: #fff;
   font-weight: bold;
   margin: 0;
-  position: absolute;
-  bottom:0px;
+  position: relative;
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  background: rgba(25, 25, 25, .75);
+  background: rgba(25, 25, 25, 1);
+  font-size: 1em;
 }
 
 .main-slider img {
@@ -364,6 +365,21 @@ button[type="submit"]:hover {
     height: 130px;
     margin-top: -130px; 
   }
+
+.main-slider .slide .slide-descr p{
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  bottom:0px;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(25, 25, 25, .75);
+}
 
 /* ====================
     INTERMEDIATE: Menu
