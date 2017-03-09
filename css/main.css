@@ -63,58 +63,55 @@ textarea {
 
 body {
   font-family: 'Rubik', sans-serif;
-    background: #D9D7C1;
+  background: #FFFEF5;
 }
 
 p {
   font-size: 1.1em;
   color: #555;
-  margin: 10px 0;  
+  margin: 10px 0;
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* ===================
     ALL: Header & Footer
    =================== */
-.pre-header {
-  display: none;
-  height: 50px;
-  overflow: hidden;
-  background: url("../img/header-bg1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 .header-container {
+    z-index: 200;
     text-align: center;
-    height: 140px;
+    height: 90px;
     margin:0;
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(25, 25, 25, 0.5);
-    -moz-box-shadow:    0px 0px 5px 2px rgba(25, 25, 25, 0.5);
-    box-shadow:         0px 0px 5px 2px rgba(25, 25, 25, 0.5);
-    background: #EB2227;
-    background: -webkit-linear-gradient(#EB2227, #980004); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#EB2227, #980004); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#EB2227, #980004); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#EB2227, #980004); /* Standard syntax */
+
+    background: #C00B10;
+    background: -webkit-linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* Standard syntax */
+
 }
 
 .header-logo {
-  height: 120px;
-  width: 156px;
-  position: absolute;
-  z-index: 200;
-  background: url(../img/logo-shadow.png);
+  height: 100px;
+  width: 130px;
+  position: absolute;;
+  z-index: 1000;
+  background: url("../img/logo-shadow.png");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  top:10px;
+  top:5px;
   left: 50%;
-  margin-left:-78px;
+  margin-left:-65px;
 }
 
 .pre-footer {
@@ -124,7 +121,7 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  margin-top: -100px; 
+  margin-top: -100px;
 }
 
 .footer-container {
@@ -135,6 +132,9 @@ p {
   background: -o-linear-gradient(#EB2227, #980004); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#EB2227, #980004); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#EB2227, #980004); /* Standard syntax */
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 p img {
@@ -151,7 +151,7 @@ margin-right: 10px;
    ============== */
 .main-slider {
   margin-top: 0px;
-  background: #f9f9f9;
+
 }
 
 .main-slider .slide {
@@ -163,7 +163,7 @@ margin-right: 10px;
 .main-slider .slide .slide-descr p{
   text-align: center;
   padding: 20px;
-  color: #fff;
+  color: #333;
   font-weight: bold;
   margin: 0;
   position: relative;
@@ -171,7 +171,6 @@ margin-right: 10px;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  background: rgba(25, 25, 25, 1);
   font-size: 1em;
 }
 
@@ -192,11 +191,7 @@ margin-right: 10px;
 
 .main {
     padding:0px 0 130px 0;
-    background: #FFFEF3;
-    border-left:5px solid #C00B10 ;
-    border-right:5px solid #C00B10 ;
-    box-shadow: 0px 2px 9px 0px rgba(25, 25, 25, 0.5);
-    
+    background: #FFFDE0;
 }
 .main article section{
   padding: 25px;
@@ -205,7 +200,7 @@ margin-right: 10px;
   padding: 0;
   font-size: 1.2em;
   padding: 30px 10px;
-  background-color: #C00B10;
+  background-color: #EB2227;
   text-align: center;
   color: #FBED1F;
 }
@@ -341,29 +336,63 @@ button[type="submit"]:hover {
   box-shadow: 0 8px 12px rgba(0,0,0,0.25), 0 5px 8px rgba(0,0,0,0.22);
   -webkit-transition: all .5s; /* Safari */
   transition: all .5s;
+  background: #FBED1F;
+  color: #222;
+  background: -webkit-linear-gradient(#FBED1F, #A59B00); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#FBED1F, #A59B00); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FBED1F, #A59B00); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#FBED1F, #A59B00); /* Standard syntax */
 }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-
-  .pre-header {
-    display: block;
+  body {
+    background: -webkit-linear-gradient(#FFF899, #FFFEF5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFF899, #FFFEF5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFF899, #FFFEF5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF899, #FFFEF5); /* Standard syntax */
+    background: url("../img/body-bg.svg");
+    background-color: #FFFEF5;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
   }
+
+  .main {
+      padding:0px 0 130px 0;
+      background: #FFFDE0;
+      border-left:5px solid #EB2227 ;
+      border-right:5px solid #EB2227 ;
+      box-shadow: 0px 2px 9px 0px rgba(25, 25, 25, 0.5);
+      border-radius: 10px 10px 0 0;
+  }
+
+  .wrapper {
+      width: 90%;
+      margin: 0 5%;
+  }
+
+  .main-container {
+    padding-top: 60px;
+  }
+
   .header-container {
-      height: 80px;
+      height: 60px;
+      border-radius: 5px 5px 0 0;
   }
 
   .header-logo {
     height: 150px;
     width: 196px;
     margin-left:-98px;
+    top: 10px;
   }
 
   .pre-footer {
     height: 130px;
-    margin-top: -130px; 
+    margin-top: -130px;
   }
 
 .main-slider .slide .slide-descr p{
@@ -399,16 +428,20 @@ button[type="submit"]:hover {
     }
 }
 
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 960px) {
+  .main-container {
+    padding-top: 80px;
+  }
 
   .header-container {
-      height: 100px;
+      height: 60px;
   }
 
   .header-logo {
     height: 180px;
     width: 234px;
     margin-left:-117px;
+    top:10px;
   }
 
   nav {
@@ -421,28 +454,29 @@ button[type="submit"]:hover {
   nav ul .fb-btn {
     float: right;
     position: relative;
-  }  
+  }
   nav ul .fb-btn i {
     color: #fff;
     font-size: 1.5em;
   }
   nav a {
-    color: #fff;
+    color: #FBED1F;
     font-weight: bold;
     text-decoration: none;
   }
   nav a:hover {
-    color: #FBED1F;
+    color: #FFF;
   }
   nav a:hover > li {
-     border-bottom: 2px solid #FBED1F;
+     border-bottom: 2px solid #FFF;
   }
 
   nav ul {
     padding: 0;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 10px;
+    margin-left: 10px;
     list-style: none;
   }
 
