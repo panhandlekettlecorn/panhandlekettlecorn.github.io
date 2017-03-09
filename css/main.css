@@ -92,7 +92,7 @@ p {
     height: 90px;
     margin:0;
 
-    background: #C00B10;
+    background: #EB2227;
     background: -webkit-linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* For Firefox 3.6 to 15 */
@@ -162,22 +162,27 @@ margin-right: 10px;
 
 .main-slider .slide .slide-descr p{
   text-align: center;
-  padding: 20px;
-  color: #333;
-  font-weight: bold;
-  margin: 0;
+  padding: 30px 10px;
   position: relative;
+  bottom:0px;
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  font-size: 1em;
+  color: #FBED1F;
+  font-size: 1.2em;
+  background: #EB2227;
+  background: -webkit-linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* Standard syntax */
 }
 
 .main-slider img {
   min-width:100%;
   max-width:100%;
 }
+
 /* ==============
     MOBILE: Menu
    ============== */
@@ -195,14 +200,6 @@ margin-right: 10px;
 }
 .main article section{
   padding: 25px;
-}
-.main article .callout {
-  padding: 0;
-  font-size: 1.2em;
-  padding: 30px 10px;
-  background-color: #EB2227;
-  text-align: center;
-  color: #FBED1F;
 }
 .main .first-article {
   padding: 0;
@@ -359,7 +356,10 @@ button[type="submit"]:hover {
     background-size: contain;
     background-position: top;
   }
-
+  .main-slider img {
+    min-width:100%;
+    max-width:100%;
+  }
   .main {
       padding:0px 0 130px 0;
       background: #FFFDE0;
@@ -394,21 +394,6 @@ button[type="submit"]:hover {
     height: 130px;
     margin-top: -130px;
   }
-
-.main-slider .slide .slide-descr p{
-  text-align: center;
-  padding: 20px;
-  color: #fff;
-  font-weight: bold;
-  margin: 0;
-  position: absolute;
-  bottom:0px;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 auto;
-  background: rgba(25, 25, 25, .75);
-}
 
 /* ====================
     INTERMEDIATE: Menu
