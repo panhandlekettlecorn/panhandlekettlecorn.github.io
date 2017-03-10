@@ -1,14 +1,1 @@
-
-$('.main-slider').slick({
-  fade: true,
-  slidesToShow: 1,
-  autoplay: true,
-  arrows: false,
-  dots: true,
-  infinite: true,
-  pauseOnFocus: false,
-  pauseOnHover: false,
-  pauseOnDotsHover: true,
-  speed: 500,
-  initialSlide: 0,
-});
+$(".main-slider").slick({fade:!0,slidesToShow:1,autoplay:!0,arrows:!1,dots:!0,infinite:!0,pauseOnFocus:!1,pauseOnHover:!1,pauseOnDotsHover:!0,speed:500,initialSlide:0});
