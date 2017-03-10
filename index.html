@@ -28,19 +28,20 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <div class="header-container">
-                    <header class="wrapper clearfix">
+                    <header class="clearfix">
+                      <nav>
+                        <ul class="primary-menu">
+                            <a href="#product-list"><li>Products</li></a>
+                            <a href="#facebook-events"><li>Events</li></a>
+                            <a href="#contact-form"><li>Contact</li></a>
+                        </ul>
+                        <div class="fb-btn">
+                            <div class="fb-follow" data-href="https://www.facebook.com/panhandlekettlecorn" data-layout="button" data-size="large" data-show-faces="false"></div>
+                            <span class="tooltiptext">Follow us on Facebook and be the first to know about upcoming events and promotions.</span>
+                        </div>
+                      </nav>
                       <div class="header-logo"></div>
-                        <nav>
-                            <ul>
-                                <a href="#product-list"><li>Products</li></a>
-                                <a href="#facebook-events"><li>Events</li></a>
-                                <a href="#contact-form"><li>Contact</li></a>
-                                <li class="fb-btn">
-                                    <!--<div class="fb-follow" data-href="https://www.facebook.com/panhandlekettlecorn" data-layout="button" data-size="large" data-show-faces="false"></div>-->
-                                    <span class="tooltiptext">Follow us on Facebook and be the first to know about upcoming events and promotions.</span>
-                                </li>
-                            </ul>
-                        </nav>
+
                     </header>
                 </div>
 
@@ -141,8 +142,8 @@
             <footer class="wrapper">
                 <article id="facebook-events">
                     <h2><i class="fa fa-calendar" aria-hidden="true"></i>Upcoming Events</h2>
-                    <!--<div class="fb-page" data-href="https://www.facebook.com/panhandlekettlecorn" data-tabs="events" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/panhandlekettlecorn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/panhandlekettlecorn">Panhandle Kettle Corn</a></blockquote></div>
-                    -->
+                    <div class="fb-page" data-href="https://www.facebook.com/panhandlekettlecorn" data-tabs="events" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/panhandlekettlecorn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/panhandlekettlecorn">Panhandle Kettle Corn</a></blockquote></div>
+                  
                 </article>
 
                 <aside id="contact-form">
@@ -175,7 +176,7 @@
           </footer>
         </div>
         <script async src="./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <!--
+
         <div id="fb-root"></div>
         <script async>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -197,7 +198,7 @@
           ga('send', 'pageview');
 
         </script>
-      -->
+
       <script >window.jQuery || document.write('<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
       <script type="text/javascript" src="./js/vendor/slick/slick.min.js"></script>
       <script src="js/main.js"></script>

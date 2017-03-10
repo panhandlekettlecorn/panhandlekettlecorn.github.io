@@ -190,7 +190,70 @@ margin-right: 10px;
     MOBILE: Menu
    ============== */
   nav {
+    padding:20px;
+    display: table;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  nav .menu-btn {
+    float: left;
+    color: #FBED1F;
+    display: block;
+    font-size: 1.2em;
+  }
+  nav .menu-btn:hover {
+    color: #fff;
+    cursor: pointer;
+  }  
+  nav ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style: none;
+  }
+  nav ul li:first-child {
+  margin-left: 0;
+  }
+  nav ul li {
+    float: left;
+    margin: 0 8px;
+  }
+  nav a {
+    color: #FBED1F;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #FFF;
+  }
+  nav a:hover > li {
+     border-bottom: 2px solid #FFF;
+  }
+  nav .primary-menu {
     display: none;
+  }
+  nav .fb-btn {
+    position: relative;
+    float: right;
+    display: table;
+  }
+  nav .fb-btn .tooltiptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: rgba(25,25,25,.75);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      right:0px;
+      margin-top: 10px;
+  }
+  nav .fb-btn:hover .tooltiptext {
+      visibility: visible;
   }
 
 /* ==============
@@ -364,7 +427,6 @@ button[type="submit"]:hover {
       box-shadow: 0px 2px 9px 0px rgba(25, 25, 25, 0.5);
       border-radius: 10px 10px 0 0;
   }
-
   .wrapper {
       width: 90%;
       margin: 0 5%;
@@ -378,7 +440,6 @@ button[type="submit"]:hover {
       height: 60px;
       border-radius: 5px 5px 0 0;
   }
-
   .header-logo {
     height: 150px;
     width: 196px;
@@ -392,7 +453,7 @@ button[type="submit"]:hover {
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 768px) {
   .main-container {
     padding-top: 80px;
   }
@@ -407,60 +468,10 @@ button[type="submit"]:hover {
     margin-left:-117px;
     top:10px;
   }
+ nav .primary-menu {
+    display: inline;
+}
 
-  nav {
-    display: block;
-  }
-
-  nav ul {
-    display: table;
-    padding: 0;
-    margin: 0;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    list-style: none;
-  }
-
-  nav ul li {
-    float: left;
-    margin: 0 8px;
-  }
-  nav a {
-    color: #FBED1F;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  nav a:hover {
-    color: #FFF;
-  }
-  nav a:hover > li {
-     border-bottom: 2px solid #FFF;
-  }
-  nav ul .fb-btn {
-    float: right;
-    position: relative;
-  }
-  nav ul .fb-btn i {
-    color: #fff;
-    font-size: 1.5em;
-  }
-  nav ul .fb-btn .tooltiptext {
-      visibility: hidden;
-      width: 160px;
-      background-color: rgba(25,25,25,.75);
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      border-radius: 6px;
-      position: absolute;
-      z-index: 1;
-      right:0px;
-      margin-top: 10px;
-  }
-  nav ul .fb-btn:hover .tooltiptext {
-      visibility: visible;
-  }
 /* ============
     WIDE: Main
    ============ */
