@@ -208,7 +208,7 @@ margin-right: 10px;
       position: absolute;
       z-index: 1;
       right:0px;
-      margin-top: 10px;
+      margin-top: 50px;
   }
   nav .fb-btn:hover .tooltiptext {
       visibility: visible;
