@@ -151,7 +151,8 @@ margin-right: 10px;
    ============== */
 .main-slider {
   margin-top: 0px;
-
+  text-align: center;
+  width: 100%;
 }
 
 .main-slider .slide {
@@ -178,9 +179,11 @@ margin-right: 10px;
   background: linear-gradient(90deg, #EB2227, #C00B10, #EB2227); /* Standard syntax */
 }
 
-.main-slider img {
+.main-slider .slide img {
   min-width:100%;
   max-width:100%;
+  width: 100%;
+  max-width: -moz-max-content;
 }
 
 /* ==============
@@ -204,6 +207,7 @@ margin-right: 10px;
 .main .first-article {
   padding: 0;
   overflow: hidden;
+  width: 100%;
 }
 .main article h2 {
   font-size: 1.2em;
@@ -326,10 +330,6 @@ button[type="submit"] {
 }
 button[type="submit"]:hover {
   background: #555;
-  background: -webkit-linear-gradient(#777, #333); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#777, #333); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#777, #333); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#777, #333); /* Standard syntax */
   box-shadow: 0 8px 12px rgba(0,0,0,0.25), 0 5px 8px rgba(0,0,0,0.22);
   -webkit-transition: all .5s; /* Safari */
   transition: all .5s;
@@ -346,10 +346,6 @@ button[type="submit"]:hover {
 
 @media only screen and (min-width: 480px) {
   body {
-    background: -webkit-linear-gradient(#FFF899, #FFFEF5); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FFF899, #FFFEF5); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FFF899, #FFFEF5); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FFF899, #FFFEF5); /* Standard syntax */
     background: url("../img/body-bg.svg");
     background-color: #FFFEF5;
     background-repeat: no-repeat;
@@ -394,23 +390,6 @@ button[type="submit"]:hover {
     height: 130px;
     margin-top: -130px;
   }
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
 @media only screen and (min-width: 960px) {
@@ -430,19 +409,22 @@ button[type="submit"]:hover {
   }
 
   nav {
-    display: inline;
+    display: block;
   }
+
+  nav ul {
+    display: table;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    list-style: none;
+  }
+
   nav ul li {
     float: left;
     margin: 0 8px;
-  }
-  nav ul .fb-btn {
-    float: right;
-    position: relative;
-  }
-  nav ul .fb-btn i {
-    color: #fff;
-    font-size: 1.5em;
   }
   nav a {
     color: #FBED1F;
@@ -455,34 +437,30 @@ button[type="submit"]:hover {
   nav a:hover > li {
      border-bottom: 2px solid #FFF;
   }
-
-  nav ul {
-    padding: 0;
-    margin: 0;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    list-style: none;
+  nav ul .fb-btn {
+    float: right;
+    position: relative;
   }
-
-nav ul .fb-btn .tooltiptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: rgba(25,25,25,.75);
+  nav ul .fb-btn i {
     color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
-    right:0px;
-    margin-top: 10px;
-}
-
-nav ul .fb-btn:hover .tooltiptext {
-    visibility: visible;
-}
-
+    font-size: 1.5em;
+  }
+  nav ul .fb-btn .tooltiptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: rgba(25,25,25,.75);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      right:0px;
+      margin-top: 10px;
+  }
+  nav ul .fb-btn:hover .tooltiptext {
+      visibility: visible;
+  }
 /* ============
     WIDE: Main
    ============ */

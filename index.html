@@ -12,7 +12,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="./css/normalize.min.css">
-        <link rel="stylesheet" href="./css/main-min.css">
+        <link rel="stylesheet" href="./css/main.css">
 
         <link rel="stylesheet" type="text/css" href="./js/vendor/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="./js/vendor/slick/slick-theme.css"/>
@@ -36,7 +36,7 @@
                                 <a href="#facebook-events"><li>Events</li></a>
                                 <a href="#contact-form"><li>Contact</li></a>
                                 <li class="fb-btn">
-                                    <div class="fb-follow" data-href="https://www.facebook.com/panhandlekettlecorn" data-layout="button" data-size="large" data-show-faces="false"></div>
+                                    <!--<div class="fb-follow" data-href="https://www.facebook.com/panhandlekettlecorn" data-layout="button" data-size="large" data-show-faces="false"></div>-->
                                     <span class="tooltiptext">Follow us on Facebook and be the first to know about upcoming events and promotions.</span>
                                 </li>
                             </ul>
@@ -46,27 +46,28 @@
 
 
                 <article class="first-article">
+
                     <div class="main-slider">
                         <div class="slide">
-                            <img src="./img/slider5.jpg" alt="stirring kettle corn"></img>
+                            <img src="./img/slider5.jpg" alt="stirring kettle corn" />
                                 <div class="slide-descr">
                                     <p>Kettle corn and fun go together and makes any event into a carnival-like experience</p>
                                 </div>
                         </div>
                         <div class="slide">
-                            <img src="./img/slider6.jpg" alt="bright red Panhandle Kettle Corn tent"></img>
+                            <img src="./img/slider6.jpg" alt="bright red Panhandle Kettle Corn tent" />
                                 <div class="slide-descr">
                                     <p>Look for the bright red Panhandle Kettle Corn tent at community events, fairs and festivals.</p>
                                 </div>
                         </div>
                         <div class="slide">
-                            <img src="./img/slider1.jpg" alt="bags of kettle corn"></img>
+                            <img src="./img/slider1.jpg" alt="bags of kettle corn" />
                                 <div class="slide-descr">
                                     <p>We can help promote your organization with several unique flavors of Kettle Corn.</p>
                                 </div>
                             </div>
                         <div class="slide">
-                            <img src="./img/slider3.jpg" alt="cooking kettle corn"></img>
+                            <img src="./img/slider3.jpg" alt="cooking kettle corn" />
                                 <div class="slide-descr">
                                     <p>
                                         Include us in your next school or fundraising event. A portion of proceeds go to your cause or program.
@@ -74,7 +75,7 @@
                                 </div>
                         </div>
                         <div class="slide">
-                            <img src="./img/slider4.jpg" alt="owners of Panhandle Ketlte Corn, Isaac and June Ballard"></img>
+                            <img src="./img/slider4.jpg" alt="owners of Panhandle Ketlte Corn, Isaac and June Ballard" />
                                 <div class="slide-descr">
                                     <p>We are excited to serve our community and the panhandle of Nebraska -- Isaac and June Ballard.</p>
                                 </div>
@@ -105,13 +106,17 @@
                             <li>Cinnamon Kettle Corn</li>
                         </ul>
                         <p> We offer 3 convenient sizes:</p>
-                            <p><ul>
+                            <p>
+                              <ul>
                                 <li>Eat it Now (small) -- $3.00</li>
                                 <li>Share with Others, Or Not! (medium) -- $5.00</li>
                                 <li>Take Some Home (large) -- $8.00</li>
-                            </ul></p>
+                            </ul>
+                          </p>
                         <h2>Promotional Events</h2>
-                        <p>Bring the fun to your organization's next promotional or customer appreciation event. Panhandle Popcorn will set-up and serve fresh Kettle Corn and other delicious popcorn flavors.</p>
+                        <p>
+                          Bring the fun to your organization's next promotional or customer appreciation event. Panhandle Popcorn will set-up and serve fresh Kettle Corn and other delicious popcorn flavors.
+                        </p>
                         <p><ul>
                             <li>Minimum Fee is $225.00 (6-8 hr day)</li>
                             <li>Includes 150 bags of kettle corn (10")</li>
@@ -136,7 +141,8 @@
             <footer class="wrapper">
                 <article id="facebook-events">
                     <h2><i class="fa fa-calendar" aria-hidden="true"></i>Upcoming Events</h2>
-                    <div class="fb-page" data-href="https://www.facebook.com/panhandlekettlecorn" data-tabs="events" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/panhandlekettlecorn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/panhandlekettlecorn">Panhandle Kettle Corn</a></blockquote></div>
+                    <!--<div class="fb-page" data-href="https://www.facebook.com/panhandlekettlecorn" data-tabs="events" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/panhandlekettlecorn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/panhandlekettlecorn">Panhandle Kettle Corn</a></blockquote></div>
+                    -->
                 </article>
 
                 <aside id="contact-form">
@@ -168,6 +174,8 @@
               </ul>
           </footer>
         </div>
+        <script async src="./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!--
         <div id="fb-root"></div>
         <script async>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -178,12 +186,7 @@
           }(document, 'script', 'facebook-jssdk'));
         </script>
 
-        <script async src="./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script >window.jQuery || document.write('<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script type="text/javascript" src="./js/vendor/slick/slick.min.js"></script>
-        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -194,5 +197,9 @@
           ga('send', 'pageview');
 
         </script>
+      -->
+      <script >window.jQuery || document.write('<script src="./js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script type="text/javascript" src="./js/vendor/slick/slick.min.js"></script>
+      <script src="js/main.js"></script>
     </body>
 </html>
