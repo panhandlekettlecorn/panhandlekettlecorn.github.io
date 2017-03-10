@@ -78,13 +78,15 @@ p {
   width: 130px;
   position: absolute;;
   z-index: 1000;
-  background: url("../img/logo-shadow.png");
+  background: url("../img/logo.svg");
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   top:5px;
   left: 50%;
   margin-left:-65px;
+  -webkit-filter: drop-shadow( 0px 1px 5px rgba(25,25,25,.5) );
+          filter: drop-shadow( 0px 1px 5px rgba(25,25,25,.5) );
 }
 
 .pre-footer {
