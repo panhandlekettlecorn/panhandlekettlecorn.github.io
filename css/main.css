@@ -22,39 +22,12 @@ html {
     text-shadow: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+img {
     vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
 }
 
 textarea {
     resize: vertical;
-}
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
 }
 
 /* ===== Initializr Styles ==================================================
@@ -137,11 +110,6 @@ p {
   box-sizing: border-box;
 }
 
-p img {
-  float: left;
-  margin: 0 30px 20px 0;
-}
-
 .fa {
 margin-right: 10px;
 }
@@ -194,16 +162,6 @@ margin-right: 10px;
     display: table;
     box-sizing: border-box;
     width: 100%;
-  }
-  nav .menu-btn {
-    float: left;
-    color: #FBED1F;
-    display: block;
-    font-size: 1.2em;
-  }
-  nav .menu-btn:hover {
-    color: #fff;
-    cursor: pointer;
   }  
   nav ul {
     display: inline;
@@ -282,9 +240,6 @@ margin-right: 10px;
 .main article h2:first-child {
   margin: 0;
 }
-.main article h3 {
-  color: #555;
-}
 footer ul {
   text-align: center;
 }
@@ -332,10 +287,6 @@ footer aside ul li{
     ALL: IE Fixes
    =============== */
 
-.ie7 .title {
-    padding-top: 20px;
-}
-
 /* ==========================================================================
    Form Styles
    ========================================================================== */
@@ -363,12 +314,6 @@ textarea {
   :-moz-placeholder { /* Firefox 18- */
     color: #b5b5b5;
   }
-
-label {
-  color: #444;
-  font-weight: 600;
-  font-size: .8em;
-}
 
 button[type="submit"] {
   width: 100%;
@@ -503,36 +448,6 @@ button[type="submit"]:hover {
    Helper classes
    ========================================================================== */
 
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -570,26 +485,15 @@ button[type="submit"]:hover {
         content: " (" attr(href) ")";
     }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after {
         content: "";
     }
 
-    pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
 
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
     img {
         page-break-inside: avoid;
     }
@@ -599,14 +503,12 @@ button[type="submit"]:hover {
     }
 
     p,
-    h2,
-    h3 {
+    h2 {
         orphans: 3;
         widows: 3;
     }
 
-    h2,
-    h3 {
+    h2 {
         page-break-after: avoid;
     }
 }
