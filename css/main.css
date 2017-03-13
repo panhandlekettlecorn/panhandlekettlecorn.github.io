@@ -178,7 +178,7 @@ margin-right: 10px;
   }
   nav ul li {
     float: left;
-    margin: 0 8px;
+    margin: 0 10px;
   }
   nav a {
     color: #FBED1F;
@@ -187,9 +187,6 @@ margin-right: 10px;
   }
   nav a:hover {
     color: #FFF;
-  }
-  nav a:hover > li {
-     border-bottom: 2px solid #FFF;
   }
   nav .primary-menu {
     display: none;
